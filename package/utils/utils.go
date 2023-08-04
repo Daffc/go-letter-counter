@@ -19,11 +19,12 @@ Handles arguments, returning:
 	input file descriptor (*os.File)
 	output file descriptor (*os.File)
 */
-func HandleArguemnts(args []string) (int, int, *os.File, *os.File) {
+func HandleArguemnts(args []string) (int, int, *os.File, *os.File, bool) {
 	inputFilePathPtr := flag.String("i", "", "PathPtr to the file to be read.")
 	outputFilePathPtr := flag.String("o", "", "PathPtr to the output file.")
 	nGoroutines := flag.Int("n", 1, "Number of worker goroutines.")
 	bufferSize := flag.Int("b", 2000, "Buffer size (bytes) for each worker.")
+	isBuffered := flag.Bool("buffered", false, "Flag that indicates if the reads will be buffered for each worker (if not set there will be only one buffer for the whole read shared between the workers).")
 	flag.Parse()
 
 	var inputFile *os.File
@@ -44,5 +45,5 @@ func HandleArguemnts(args []string) (int, int, *os.File, *os.File) {
 		CheckError(err)
 	}
 
-	return *nGoroutines, *bufferSize, inputFile, outputFile
+	return *nGoroutines, *bufferSize, inputFile, outputFile, *isBuffered
 }
