@@ -1,0 +1,42 @@
+Arquitetura:                     x86_64
+Modo(s) operacional da CPU:      32-bit, 64-bit
+Ordem dos bytes:                 Little Endian
+Address sizes:                   48 bits physical, 48 bits virtual
+CPU(s):                          4
+Lista de CPU(s) on-line:         0-3
+Thread(s) per núcleo:            1
+Núcleo(s) por soquete:           4
+Soquete(s):                      1
+Nó(s) de NUMA:                   1
+ID de fornecedor:                AuthenticAMD
+Família da CPU:                  25
+Modelo:                          80
+Nome do modelo:                  AMD Ryzen 7 5700G with Radeon Graphics
+Step:                            0
+CPU MHz:                         3792.874
+BogoMIPS:                        7585.74
+Virtualização:                   AMD-V
+Fabricante do hipervisor:        KVM
+Tipo de virtualização:           completo
+cache de L1d:                    128 KiB
+cache de L1i:                    128 KiB
+cache de L2:                     2 MiB
+cache de L3:                     16 MiB
+CPU(s) de nó0 NUMA:              0-3
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Not affected
+Vulnerability Retbleed:          Not affected
+Vulnerability Spec store bypass: Not affected
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
+Opções:                          fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch vmmcall fsgsbase bmi1 avx2 bmi2 invpcid rdseed clflushopt arat nrip_save flushbyasid decodeassists
+
+  *-memory
+       descrição: Memória do sistema
+       ID físico: 0
+       tamanho: 16GiB
